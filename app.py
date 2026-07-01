@@ -49,8 +49,8 @@ T2 = {
 
 # ── Template 4 slot positions (light photo, left-aligned teal) ───────────────
 T4 = {
-    "type_top":     340,
-    "type_bot":     695,
+    "type_top":     365,
+    "type_bot":     520,
     "where_top":    876,
     "where_bot":    907,
     "where_val_x":  447,
@@ -129,10 +129,8 @@ def build_type_lines(types_raw):
         return [types[0].upper()]
     elif len(types) == 2:
         return [f"{types[0].upper()} &", types[1].upper()]
-    elif len(types) == 3:
-        return [f"{types[0].upper()} &", f"{types[1].upper()} &", types[2].upper()]
     else:
-        return ["BEAUTY"]
+        return ["BEAUTY BUSINESSES"]
 
 def build_state_text(draw, states_raw, max_width=580):
     states = [s.strip() for s in states_raw.split(',') if s.strip()]
